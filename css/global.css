@@ -1,0 +1,195 @@
+body {
+  background: var(--color-black);
+  color: var(--color-light);
+  font-family: var(--font-text);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* CONTAINER */
+
+.container {
+  width: min(1200px, calc(100% - 3rem));
+  margin-inline: auto;
+}
+
+/* SECTIONS */
+
+.section {
+  padding: 90px 0;
+}
+
+.section-title {
+  font-family: var(--font-title);
+  font-size: var(--fs-xl);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+/* =========================
+SCROLL ANIMATIONS
+========================= */
+
+.hidden {
+  opacity: 0;
+  will-change: transform, opacity;
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
+}
+
+.show {
+  opacity: 1;
+}
+
+/* DIRECTIONS */
+
+.reveal-left.hidden {
+  transform: translate3d(-60px, 0, 0);
+}
+
+.reveal-right.hidden {
+  transform: translate3d(60px, 0, 0);
+}
+
+.reveal-up.hidden {
+  transform: translate3d(0, 40px, 0);
+}
+
+/* STAGGER */
+
+.show-delay-1 {
+  transition-delay: 0.15s;
+}
+
+.show-delay-2 {
+  transition-delay: 0.3s;
+}
+
+.show-delay-3 {
+  transition-delay: 0.45s;
+}
+
+.show-delay-4 {
+  transition-delay: 0.6s;
+}
+
+/* =========================
+TABLET ADJUSTMENTS
+========================= */
+
+@media (max-width: 1024px) {
+  .reveal-left.hidden {
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  .reveal-right.hidden {
+    transform: translate3d(25px, 0, 0);
+  }
+
+  .reveal-up.hidden {
+    transform: translate3d(0, 30px, 0);
+  }
+}
+
+/* =========================
+MOBILE ADJUSTMENTS
+========================= */
+
+@media (max-width: 768px) {
+  .reveal-left.hidden {
+    transform: translate3d(-15px, 0, 0);
+  }
+
+  .reveal-right.hidden {
+    transform: translate3d(15px, 0, 0);
+  }
+
+  .reveal-up.hidden {
+    transform: translate3d(0, 20px, 0);
+  }
+}
+
+/* =========================
+FLOATING ANIMATION
+========================= */
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-1 {
+  animation: floating 4s ease-in-out infinite;
+}
+
+.float-2 {
+  animation: floating 5s ease-in-out infinite;
+}
+
+.float-3 {
+  animation: floating 4.5s ease-in-out infinite;
+}
+
+.float-4 {
+  animation: floating 5.5s ease-in-out infinite;
+}
+
+/* =========================
+SECTION DIVIDER
+========================= */
+
+.section-divider {
+  width: 100%;
+  height: 1px;
+  margin: 0 auto;
+
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(212, 175, 55, 0.35),
+    transparent
+  );
+}
+
+/* =========================
+MAGNETIC BUTTONS
+========================= */
+
+.magnetic {
+  display: inline-block;
+  transition: transform 0.25s ease;
+  will-change: transform;
+}
+
+/* =========================
+LETTER REVEAL
+========================= */
+
+.hero-title span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: revealLetter 0.6s forwards;
+}
+
+@keyframes revealLetter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

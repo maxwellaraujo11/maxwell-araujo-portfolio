@@ -1,0 +1,85 @@
+.professional {
+  background: var(--color-black);
+}
+
+.professional-title {
+  max-width: 700px;
+  font-size: 2.5rem;
+  line-height: 1.15;
+}
+
+.professional-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.professional-card {
+  background: rgba(255, 255, 255, 0.02);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  padding: 2.5rem;
+
+  min-height: 200px;
+
+  transition: all 0.3s ease;
+
+  border-radius: 8px;
+}
+
+.professional-card:hover {
+  transform: translateY(-8px) scale(1.02);
+
+  border-color: var(--color-gold);
+
+  box-shadow: 0 20px 50px rgba(212, 175, 55, 0.15);
+}
+
+.professional-icon {
+  font-size: 2rem;
+
+  color: var(--color-gold);
+
+  margin-bottom: 1rem;
+
+  transition: all 0.3s ease;
+}
+
+.professional-card:hover .professional-icon {
+  transform: scale(1.1);
+}
+
+.professional-card h3 {
+  color: var(--color-gold);
+
+  margin-bottom: 1rem;
+
+  font-size: 2rem;
+}
+
+.professional-card p {
+  line-height: 1.8;
+
+  color: var(--color-light);
+}
+
+.professional-icon {
+  font-size: 2.2rem;
+
+  width: 50px;
+
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: var(--color-gold);
+
+  margin-bottom: 1.5rem;
+}

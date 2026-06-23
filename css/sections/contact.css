@@ -1,0 +1,85 @@
+.contact {
+  text-align: center;
+}
+
+.contact .section-title {
+  margin-bottom: 2rem;
+}
+
+.contact-description {
+  max-width: 700px;
+
+  margin: 0 auto 4rem;
+
+  line-height: 1.8;
+
+  color: var(--color-gray-light);
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact-links a {
+  padding: 1rem 2rem;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  transition: var(--transition);
+
+  color: var(--color-light);
+  width: fit-content;
+}
+
+.contact-links a:hover {
+  border-color: var(--color-gold);
+
+  color: var(--color-gold);
+
+  transform: translateY(-3px);
+}
+
+/* =========================
+FOOTER REFINED
+========================= */
+
+.footer {
+  padding: 40px 0;
+}
+
+.footer-brand {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.footer-brand img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  opacity: 0.95;
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  transition: opacity 0.3s ease;
+}
+
+.footer-bottom p:hover {
+  opacity: 0.75;
+}
+
+.footer-bottom span {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-gray);
+  letter-spacing: 1px;
+}

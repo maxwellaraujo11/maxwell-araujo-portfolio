@@ -1,0 +1,344 @@
+/* =========================
+TABLET
+========================= */
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 100px 0;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+    line-height: 1.15;
+    max-width: 600px;
+  }
+
+  /* ABOUT */
+
+  .about .about-content {
+    display: block !important;
+  }
+
+  .about .about-image {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+  }
+
+  /* INTERNATIONAL */
+
+  .international .international-content {
+    display: block !important;
+  }
+
+  .international .international-text {
+    margin-bottom: 2rem;
+  }
+
+  .international .international-image {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  /* FEATURED WORK */
+
+  .featured-work .featured-work-content {
+    display: block !important;
+  }
+
+  .featured-work .featured-work-image {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+  }
+
+  /* IMAGES */
+
+  .about-image img,
+  .international-image img,
+  .featured-work-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 420px;
+    object-fit: cover;
+  }
+
+  /* PROFESSIONAL */
+
+  .professional-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .professional-card {
+    padding: 2rem;
+  }
+
+  /* FEATURED INFO */
+
+  .featured-work-info {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .section {
+    padding: 80px 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    line-height: 1.15;
+    max-width: 100%;
+  }
+
+  /* HEADER */
+
+  .header {
+    padding: 1rem 0;
+  }
+
+  /* HEADER */
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+    width: 100%;
+
+    background: rgba(10, 10, 10, 0.98);
+
+    display: none;
+    flex-direction: column;
+
+    padding: 2rem;
+
+    gap: 1.5rem;
+
+    text-align: center;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu a {
+    font-size: 1rem;
+  }
+
+  /* HERO */
+
+  .hero-title {
+    font-size: 2.2rem;
+    line-height: 1.1;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    gap: 1rem;
+  }
+
+  /* HIGHLIGHTS */
+
+  .highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .highlight-card {
+    padding: 1.2rem;
+    min-height: auto;
+  }
+
+  .highlight-card h3 {
+    font-size: 1.8rem;
+  }
+
+  .highlight-card p {
+    font-size: 0.85rem;
+  }
+
+  /* ABOUT */
+
+  .about .about-content {
+    display: block !important;
+  }
+
+  .about .about-image {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto 2rem;
+  }
+
+  /* INTERNATIONAL */
+
+  .international .international-content {
+    display: block !important;
+  }
+
+  .international .international-text {
+    margin-bottom: 2rem;
+  }
+
+  .international .international-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* FEATURED WORK */
+
+  .featured-work .featured-work-content {
+    display: block !important;
+  }
+
+  .featured-work .featured-work-image {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .featured-work-info {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* PROFESSIONAL */
+
+  .professional-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .professional-card {
+    padding: 1.3rem;
+  }
+
+  /* EXPERIENCE */
+
+  .experience-item {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* CONTACT */
+
+  .contact-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+/* =========================
+SMALL MOBILE
+========================= */
+
+/* =========================
+SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .section {
+    padding: 70px 0;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+    line-height: 1.15;
+  }
+
+  .section-subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+    line-height: 1.1;
+  }
+
+  .hero-description,
+  .about-text p,
+  .featured-work-text p,
+  .timeline-item p,
+  .award-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  /* HIGHLIGHTS */
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .highlight-card {
+    padding: 1rem;
+  }
+
+  /* PROFESSIONAL */
+
+  .professional-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .professional-card {
+    padding: 1rem;
+  }
+
+  /* AWARDS */
+
+  .awards-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  .awards-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .award-card {
+    padding: 1rem;
+  }
+
+  /* FEATURED INFO */
+
+  .featured-work-info {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* CONTACT */
+
+  .contact-links {
+    gap: 0.8rem;
+  }
+}

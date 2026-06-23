@@ -1,0 +1,55 @@
+:root {
+  /* ======================
+       COLORS
+    ====================== */
+
+  --color-black: #0a0a0a;
+  --color-dark: #151515;
+  --color-light: #f5f5f5;
+  --color-gold: #c9a227;
+  --color-gray: #8a8a8a;
+
+  /* ======================
+       TYPOGRAPHY
+    ====================== */
+
+  --font-title: "Playfair Display", serif;
+  --font-text: "Montserrat", sans-serif;
+
+  /* ======================
+       FONT SIZES
+    ====================== */
+
+  --fs-xs: 0.875rem;
+  --fs-sm: 1rem;
+  --fs-md: 1.25rem;
+  --fs-lg: 2rem;
+  --fs-xl: 3rem;
+  --fs-xxl: 5rem;
+
+  /* ======================
+       SPACING
+    ====================== */
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+
+  /* ======================
+       LAYOUT
+    ====================== */
+
+  --container-width: 1200px;
+
+  /* ======================
+       EFFECTS
+    ====================== */
+
+  --transition: all 0.3s ease;
+
+  --shadow-soft: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  --shadow-medium: 0 10px 30px rgba(0, 0, 0, 0.3);
+}

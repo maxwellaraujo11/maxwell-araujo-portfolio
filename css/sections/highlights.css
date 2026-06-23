@@ -1,0 +1,39 @@
+.highlights {
+  background: var(--color-dark);
+}
+
+.highlights-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 2rem;
+}
+
+.highlight-card {
+  text-align: center;
+
+  padding: 2rem;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition: var(--transition);
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+
+  border-color: var(--color-gold);
+}
+
+.highlight-card h3 {
+  font-size: 3rem;
+
+  color: var(--color-gold);
+
+  margin-bottom: 0.5rem;
+}
+
+.highlight-card p {
+  color: var(--color-light);
+}
